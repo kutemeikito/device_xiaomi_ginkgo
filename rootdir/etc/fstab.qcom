@@ -32,6 +32,10 @@
 #TODO: Add 'check' as fs_mgr_flags with data partition.
 # Currently we dont have e2fsck compiled. So fs check would failed.
 
+# NOTE: /system and /vendor partitions are early-mounted and the fstab entry is specified in device tree (duplicated below for recovery image purposes only):
+#       /proc/device-tree/firmware/android/fstab/system
+#       /proc/device-tree/firmware/android/fstab/vendor
+
 #<src>                                                 <mnt_point>               <type>  <mnt_flags and options>                            <fs_mgr_flags>
 /dev/block/bootdevice/by-name/system                    /                        ext4    ro,barrier=1,discard                                 wait,avb
 /dev/block/bootdevice/by-name/cache                     /cache                   ext4    nosuid,noatime,nodev,barrier=1                       wait
@@ -47,4 +51,8 @@
 # The update_engine code looks for this entry in order to determine the boot device address
 # and fails if it does not find it.
 /dev/block/bootdevice/by-name/misc                      /misc              emmc    defaults                                             defaults
+/dev/block/bootdevice/by-name/boot                      /boot                    emmc    defaults                                                                                          recoveryonly
+/dev/block/bootdevice/by-name/recovery                  /recovery                emmc    defaults                                                                                          recoveryonly
+/dev/block/bootdevice/by-name/vendor                    /vendor                  ext4    ro,barrier=1                                                                                      wait,recoveryonly
+
 /dev/block/zram0                                        none               swap    defaults                                             zramsize=1073741824
