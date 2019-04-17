@@ -81,6 +81,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# CNE
+PRODUCT_PACKAGES += \
+    cneapiclient \
+    com.quicinc.cne \
+    services-ext
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc
