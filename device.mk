@@ -116,6 +116,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
+# Trust HAL
+PRODUCT_PACKAGES += \
+    lineage.trust@1.0-service
+
 # VNDK-SP
 PRODUCT_PACKAGES += \
     vndk_package
