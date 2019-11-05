@@ -32,6 +32,10 @@ lib/libdpmframework.so
 lib/libdpmtcm.so
 -priv-app/dpmserviceapp/dpmserviceapp.apk
 
+# Display
+lib/libsdm-disp-apis.so
+lib64/libsdm-disp-apis.so
+
 # Display postprocessing
 lib64/vendor.display.color@1.0.so
 
