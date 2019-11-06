@@ -229,3 +229,7 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 
 #enable all system restart_level to relative
 persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# VoLTE
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
