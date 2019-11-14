@@ -185,29 +185,9 @@ framework/com.quicinc.cne.server-V2.3-java.jar
 framework/vendor.qti.hardware.data.connection-V1.0-java.jar
 framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
 framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
-lib/com.quicinc.cne.api@1.0.so
-lib/com.quicinc.cne.api@1.1.so
-lib/com.quicinc.cne.constants@1.0.so
-lib/com.quicinc.cne.constants@2.0.so
-lib/com.quicinc.cne.constants@2.1.so
-lib/com.quicinc.cne.server@1.0.so
-lib/com.quicinc.cne.server@2.0.so
-lib/com.quicinc.cne.server@2.1.so
-lib/com.quicinc.cne.server@2.2.so
-lib/com.quicinc.cne.server@2.3.so
 lib/vendor.qti.hardware.data.connection@1.0.so
 lib/vendor.qti.hardware.data.dynamicdds@1.0.so
 lib/vendor.qti.hardware.data.qmi@1.0.so
--lib64/com.quicinc.cne.api@1.0.so
--lib64/com.quicinc.cne.api@1.1.so
--lib64/com.quicinc.cne.constants@1.0.so
--lib64/com.quicinc.cne.constants@2.0.so
--lib64/com.quicinc.cne.constants@2.1.so
--lib64/com.quicinc.cne.server@1.0.so
--lib64/com.quicinc.cne.server@2.0.so
--lib64/com.quicinc.cne.server@2.1.so
--lib64/com.quicinc.cne.server@2.2.so
--lib64/com.quicinc.cne.server@2.3.so
 lib64/vendor.qti.hardware.data.connection@1.0.so
 lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 lib64/vendor.qti.hardware.data.qmi@1.0.so
@@ -1016,17 +996,12 @@ vendor/lib/libchromatix_ginkgo_s5kgm1_sunny_i_zsl_preview_3a_sn.so
 vendor/lib/libchromatix_ginkgo_s5kgm1_sunny_i_zsl_video_3a.so
 
 # Camera-configs
-vendor/camera/fonts/MFYueYuan-Regular.ttf
-vendor/camera/fonts/MI+LanTing_GB+Outside+YS_V2.3_20160322.ttf
-vendor/camera/fonts/MIUI_Time.ttf
 vendor/etc/camera/arcsoft_calibration_data.bin
 vendor/etc/camera/cameraconfig.txt
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/CFR_para.bin
 vendor/etc/camera/csidtg_camera.xml
 vendor/etc/camera/csidtg_chromatix.xml
-vendor/etc/camera/female_bg.png
-vendor/etc/camera/female_icon.png
 vendor/etc/camera/ginkgo_gc2375h_af_ofilm_ii_chromatix.xml
 vendor/etc/camera/ginkgo_gc2375h_af_ofilm_india_ii_chromatix.xml
 vendor/etc/camera/ginkgo_gc2375h_ofilm_ii_chromatix.xml
@@ -1054,10 +1029,6 @@ vendor/etc/camera/GpuKernelRepo.pb
 vendor/etc/camera/LDC_packdata_xiaomi_C3J_src1_sunny.dat
 vendor/etc/camera/LDC_packdata_xiaomi_C3J_src2_ofilm.dat
 vendor/etc/camera/libalfpc_tuning_20181222.bin
-vendor/etc/camera/male_bg.png
-vendor/etc/camera/male_icon.png
-vendor/etc/camera/Miui-Light.ttf
-vendor/etc/camera/MIUI_Time.ttf
 vendor/etc/camera/model_back.dlc
 vendor/etc/camera/model_front.dlc
 vendor/etc/camera/sceneDetection.xml
@@ -2471,7 +2442,6 @@ vendor/lib64/libhdcpsrm.so
 vendor/lib64/libwfdhdcpcp.so
 
 # WiFi
-bin/iwpriv
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
 vendor/bin/fstman
@@ -2625,8 +2595,6 @@ vendor/bin/vendor_cmd_tool
 vendor/bin/vsimd
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
--vendor/data-app/Miui_Fashiongallery_global_new/Miui_Fashiongallery_global_new.apk
--vendor/data-app/wps_lite/wps_lite.apk
 vendor/etc/bt_diag.cfg
 vendor/etc/cit1.xml
 vendor/etc/cit2.xml
