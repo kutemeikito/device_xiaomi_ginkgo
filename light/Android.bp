@@ -18,6 +18,7 @@ cc_binary {
     defaults: ["hidl_defaults"],
     name: "android.hardware.light@2.0-service.xiaomi_ginkgo",
     init_rc: ["android.hardware.light@2.0-service.xiaomi_ginkgo.rc"],
+    proprietary: true,
     srcs: ["service.cpp", "Light.cpp"],
     shared_libs: [
         "libhardware",
