@@ -40,13 +40,13 @@ while [ "$1" != "" ]; do
     shift
 done
 
-if [ -z "$SRC" ]; then
-    SRC=adb
-fi
-
 # Initialize the helper for common device
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" true "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
+
+BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
+sed -i "s|/vendor/lib/modules|/vendor/lib/modulesp|g" "$BLOB_ROOT"/vendor/lib/modulesp/modules.dep
 
 "$MY_DIR"/setup-makefiles.sh
