@@ -1,3 +1,9 @@
+<!--
+    Input:
+        vendor_framework_compatibility_matrix.xml
+        vendor_framework_compatibility_matrix.xml
+        vendor_framework_compatibility_matrix.xml
+-->
 <compatibility-matrix version="1.0" type="framework">
     <hal format="hidl" optional="true">
         <name>android.hardware.biometrics.fingerprint</name>
@@ -565,4 +571,13 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <sepolicy>
+        <kernel-sepolicy-version>30</kernel-sepolicy-version>
+        <sepolicy-version>26.0</sepolicy-version>
+        <sepolicy-version>27.0</sepolicy-version>
+        <sepolicy-version>28.0</sepolicy-version>
+    </sepolicy>
+    <avb>
+        <vbmeta-version>1.0</vbmeta-version>
+    </avb>
 </compatibility-matrix>
