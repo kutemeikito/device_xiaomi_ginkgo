@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- Copyright (c) 2015-2019, The Linux Foundation. All rights reserved.    -->
+<!-- Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.    -->
 <!--                                                                        -->
 <!-- Redistribution and use in source and binary forms, with or without     -->
 <!-- modification, are permitted provided that the following conditions are -->
@@ -130,23 +130,15 @@
     <ctl name="MultiMedia8 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="MultiMedia10 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
-    <ctl name="PRI_MI2S_RX Channels" value="One" />
+    <ctl name="WSA_CDC_DMA_RX_0 Channels" value="One" />
     <ctl name="RX_CDC_DMA_RX_0 Channels" value="One" />
     <ctl name="VI_FEED_TX Channels" value="One" />
     <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="0" />
-    <ctl name="PRI_MI2S_RX Format" value="UNPACKED" />
+    <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="0" />
+    <ctl name="WSA_CDC_DMA_RX_0 Format" value="UNPACKED" />
     <ctl name="WSA_CDC_DMA_TX_0 Format" value="UNPACKED" />
     <ctl name="RX_CDC_DMA_RX_0 Format" value="UNPACKED" />
     <ctl name="TX_CDC_DMA_TX_3 Format" value="UNPACKED" />
-    <!-- 24bit support start -->
-    <ctl name="PRIM_MI2S_RX Channels" value="Two" />
-    <ctl name="PRIM_MI2S_RX Format" value="S24_LE" />
-    <ctl name="PRIM_MI2S_RX SampleRate" value="KHZ_48" />
-    <ctl name="PRIM_MI2S_TX Channels" value="Two" />
-    <ctl name="PRIM_MI2S_TX Format" value="S24_LE" />
-    <ctl name="PRIM_MI2S_TX SampleRate" value="KHZ_48" />
-    <!-- 24bit support start -->
-
     <!-- HFP start -->
     <ctl name="HFP_SLIM7_UL_HL Switch" value="0" />
     <ctl name="PRI_MI2S_RX Port Mixer SLIM_7_TX" value="0" />
@@ -275,6 +267,7 @@
 
     <ctl name="AFE_PCM_RX Audio Mixer MultiMedia3" value="0" />
 
+
     <!-- Codec controls -->
     <!-- WSA controls -->
     <ctl name="WSA RX0 MUX" value="ZERO" />
@@ -316,7 +309,6 @@
     <ctl name="HPHL_RDAC Switch" value="0" />
     <ctl name="HPHR_RDAC Switch" value="0" />
     <ctl name="RDAC3_MUX" value="ZERO" />
-    <ctl name="RX_EAR Mode" value="OFF" />
 
     <!-- TX Controls -->
     <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
@@ -440,6 +432,9 @@
     <ctl name="MultiMedia16 Mixer SLIM_8_TX" value="0" />
     <ctl name="MultiMedia16 Mixer USB_AUDIO_TX" value="0" />
 
+    <!-- Speaker IV sense TAS25XX -->
+    <ctl name="PRIM_MI2S_TX Channels"  value="One" />
+		
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="gsm-mode">
         <ctl name="GSM mode Enable" value="ON" />
@@ -489,6 +484,7 @@
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
+    <!-- modify by dzy for adding deep-buffer handset mode -->
     <path name="deep-buffer-playback handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia1" value="1" />
     </path>
@@ -554,7 +550,7 @@
     <path name="low-latency-playback">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
-
+    
     <path name="low-latency-playback handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia5" value="1" />
     </path>
@@ -620,7 +616,7 @@
     <path name="audio-ull-playback">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia8" value="1" />
     </path>
-
+    <!-- modify by dzy for adding audio-ull-playback handset mode -->
     <path name="audio-ull-playback handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia8" value="1" />
     </path>
@@ -689,7 +685,7 @@
     <path name="compress-offload-playback">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
-
+    <!-- modify by dzy for adding compress-offload-playback handset mode -->
     <path name="compress-offload-playback handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia4" value="1" />
     </path>
@@ -764,8 +760,9 @@
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia7" value="1" />
     </path>
 
+  <!-- modif by dzy for receive test-->
     <path name="compress-offload-playback2 handset">
-        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia7" value="1" />
+         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia7" value="1" />
     </path>
 
     <path name="compress-offload-playback2 display-port">
@@ -830,6 +827,7 @@
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia10" value="1" />
     </path>
 
+    <!-- modify by dzy for adding compress-offload-playback3 handset mode -->
     <path name="compress-offload-playback3 handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia10" value="1" />
     </path>
@@ -895,7 +893,7 @@
     <path name="compress-offload-playback4">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia11" value="1" />
     </path>
-
+    <!-- modify by dzy for adding compress-offload-playback4 handset mode -->
     <path name="compress-offload-playback4 handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia11" value="1" />
     </path>
@@ -962,7 +960,7 @@
     <path name="compress-offload-playback5">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia12" value="1" />
     </path>
-
+    <!-- modify by dzy for adding compress-offload-playback5 handset mode-->
     <path name="compress-offload-playback5 handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia12" value="1" />
     </path>
@@ -1028,7 +1026,7 @@
     <path name="compress-offload-playback6">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia13" value="1" />
     </path>
-
+    <!-- modify by dzy for adding compress-offload-playback6 handset mode -->
     <path name="compress-offload-playback6 handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia13" value="1" />
     </path>
@@ -1094,7 +1092,7 @@
     <path name="compress-offload-playback7">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia14" value="1" />
     </path>
-
+    <!-- modify by dzy for adding compress-offload-playback7  handset mode -->
     <path name="compress-offload-playback7 handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia14" value="1" />
     </path>
@@ -1160,7 +1158,7 @@
     <path name="compress-offload-playback8">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia15" value="1" />
     </path>
-
+    <!-- modify by dzy for adding compress-offload-playback8 handset mode -->
     <path name="compress-offload-playback8 handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia15" value="1" />
     </path>
@@ -1227,6 +1225,7 @@
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia16" value="1" />
     </path>
 
+    <!-- modify by dzy for adding compress-offload-playback9 handset mode -->
     <path name="compress-offload-playback9 handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia16" value="1" />
     </path>
@@ -1368,7 +1367,7 @@
         <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="1" />
     </path>
 
-<!-- Add for MIUI SOS function -->
+<!-- Add by dzy for MIUI SOS function at 20181110 start -->
     <path name="incall_music_uplink speaker-protected">
         <path name="incall_music_uplink" />
     </path>
@@ -1404,7 +1403,7 @@
     <path name="incall_music_uplink2 voice-handset">
         <path name="incall_music_uplink2" />
     </path>
-
+    <!-- Add by dzy for handset device mode 20181220-->
     <path name="incall_music_uplink2 handset">
         <path name="incall_music_uplink2" />
     </path>
@@ -1448,7 +1447,7 @@
     <path name="incall_music_uplink2 speaker-and-headphones">
         <path name="incall_music_uplink2" />
     </path>
-<!-- Add for MIUI sos function end -->
+<!-- Add by dzy for MIUI sos function  20181110 end -->
 
     <path name="incall-rec-uplink bt-sco">
         <path name="incall-rec-uplink" />
@@ -1586,7 +1585,7 @@
         <ctl name="PRI_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer TX_CDC_DMA_TX_3_Voip" value="1" />
     </path>
-
+    <!-- modify by dzy for adding compress-voip-call handset mode-->
     <path name="compress-voip-call handset">
         <ctl name="RX_CDC_DMA_RX_0_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer TX_CDC_DMA_TX_3_Voip" value="1" />
@@ -1677,12 +1676,12 @@
         <ctl name="DISPLAY_PORT_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
     </path>
-
+    <!--modify by dzy for no call voice when use second sim-card-->
     <path name="voicemmode2-call">
         <ctl name="PRI_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
     </path>
-
+    <!-- add by dzy for second sim card no call voice 20181013 -->
     <path name="voicemmode2-call handset">
         <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
@@ -1732,7 +1731,7 @@
     <path name="audio-playback-voip">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia10" value="1" />
     </path>
-
+    <!-- modify by dzy for adding audio-playback-voip handset mode-->
     <path name="audio-playback-voip handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia10" value="1" />
     </path>
@@ -1748,10 +1747,6 @@
     <path name="audio-playback-voip bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="audio-playback-voip bt-sco" />
-    </path>
-
-    <path name="audio-playback-voip bt-a2dp">
-        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia10" value="1" />
     </path>
 
     <path name="audio-playback-voip afe-proxy">
@@ -1913,7 +1908,7 @@
     <path name="mmap-playback">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia16" value="1" />
     </path>
-
+    <!-- modify by dzy for adding mmap-playback handset mode-->
     <path name="mmap-playback handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia16" value="1" />
     </path>
@@ -2083,7 +2078,6 @@
     <path name="incall_music_uplink bt-a2dp">
         <path name="incall_music_uplink" />
     </path>
-
     <path name="incall_music_uplink afe-proxy">
         <path name="incall_music_uplink" />
     </path>
@@ -2097,7 +2091,7 @@
     </path>
 
     <!-- These are actual sound device specific mixer settings -->
-   <!-- Add for adding amic1 function-->
+   <!-- Add by dzy for adding amic1 function-->
     <path name="amic1">
 	<ctl name="TX DEC0 MUX" value="SWR_MIC" />
 	<ctl name="TX SMIC MUX0" value="ADC0" />
@@ -2106,6 +2100,7 @@
 	<ctl name="ADC1_MIXER Switch" value="1" />
     </path>
     <!-- Add end -->
+
     <path name="amic2">
         <ctl name="TX DEC0 MUX" value="SWR_MIC" />
         <ctl name="TX SMIC MUX0" value="ADC2" />
@@ -2115,7 +2110,7 @@
         <ctl name="ADC2 MUX" value="INP2" />
     </path>
 
-    <!--Add for addinf amic3 function-->
+    <!--Add by dzy for addinf amic3 function-->
     <path name="amic3">
 	<ctl name="TX DEC0 MUX" value="SWR_MIC" />
 	<ctl name="TX SMIC MUX0" value="ADC2" />
@@ -2149,15 +2144,13 @@
         <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
         <ctl name="TX DMIC MUX0" value="DMIC3" />
     </path>
-
+    <!-- modify by dzy for not use wsa start -->
     <path name="speaker">
 	<ctl name="PRIM_MI2S_RX Channels" value="One" />
-	<ctl name="Configuration" value="0" />
     </path>
 
     <path name="speaker-ring">
     <ctl name="PRIM_MI2S_RX Channels" value="One" />
-	<ctl name="Configuration" value="2" />
     </path>
 
     <path name="speaker-mono">
@@ -2167,7 +2160,7 @@
     <path name="speaker-mono-2">
 
     </path>
-    <!-- modify for not use wsa end-->
+    <!-- modify by dzy for not use wsa end-->
    <path name="speaker-vbat-mono">
    </path>
 
@@ -2175,8 +2168,6 @@
    </path>
 
    <path name="speaker-vbat">
-       <path name="speaker" />
-       <ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" />
    </path>
 
    <path name="sidetone-iir">
@@ -2188,19 +2179,24 @@
     </path>
 
     <path name="sidetone-headphones">
-           </path>
+        <path name="sidetone-iir" />
+        <ctl name="IIR0 INP0 Volume" value="40" />
+        <ctl name="IIR0 INP0 MUX" value="DEC0" />
+        <ctl name="RX INT0 MIX2 INP" value="SRC0" />
+        <ctl name="RX INT1 MIX2 INP" value="SRC0" />
+    </path>
 
     <path name="sidetone-handset">
         <path name="sidetone-iir" />
-        <ctl name="IIR0 INP0 Volume" value="74" />
+        <ctl name="IIR0 INP0 Volume" value="54" />
         <ctl name="IIR0 INP0 MUX" value="DEC0" />
-        <ctl name="RX INT0 MIX2 INP" value="SRC0" />
+	<ctl name="RX INT0 MIX2 INP" value="SRC0" />
     </path>
 
     <path name="afe-sidetone">
         <ctl name="Voice Sidetone Enable" value="1" />
     </path>
-
+    <!-- modify by dzy for no mic when use second sim-card-->
     <path name="speaker-mic">
         <path name="amic3" />
     </path>
@@ -2222,7 +2218,7 @@
     </path>
 
     <path name="voice-speaker-2-protected">
-        <path name="voice-speaker-protected" />
+	<path name="voice-speaker-protected" />
     </path>
 
     <path name="voice-speaker-stereo-protected">
@@ -2247,7 +2243,7 @@
     <path name="vi-feedback-mono-2">
     </path>
 
-   <!--modify for no hanset voice-->
+   <!--modify by dzy for no hanset voice-->
     <path name="handset">	
         <ctl name="RX_MACRO RX0 MUX" value="AIF1_PB" />
         <ctl name="RX_CDC_DMA_RX_0 Channels" value="One" />
@@ -2256,30 +2252,14 @@
         <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="EAR_RDAC Switch" value="1" />
 	<ctl name="RDAC3_MUX" value="RX1" />
-        <ctl name="RX_EAR Mode" value="ON" />
     </path>
 
-    <!-- HTH-57557 use dmic to recording during wechar short audio message-->
     <path name="handset-mic">
-        <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
-        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
-        <ctl name="TX SMIC MUX0" value="ADC0" />
-        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-        <ctl name="ADC1_MIXER Switch" value="1" />
-        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
-        <ctl name="TX SMIC MUX1" value="ADC2" />
-        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
-        <ctl name="ADC2_MIXER Switch" value="1" />
-        <ctl name="ADC2 MUX" value="INP3" />
-        <ctl name="IIR0 INP0 MUX" value="DEC0" />
+        <path name="amic1" /> <!-- modify by dzy for using amic1 to speaker mic-->
     </path>
 
-    <path name="handset-mic-factory">
-        <path name="amic1" /> <!-- modify for using amic1 to factory test-->
-    </path>
-
-    <!--Add for add secondary-mic -->
-    <path name="secondary-mic-factory">
+    <!--Add by dzy for add secondary-mic -->
+    <path name="secondary-mic">
 
         <path name="amic3" />
 
@@ -2292,16 +2272,20 @@
         <ctl name="RX_CDC_DMA_RX_0 Channels" value="Two" />
         <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
         <ctl name="RX INT1_1 MIX1 INP0" value="RX1" />
+	<ctl name="RX_COMP1 Switch" value="0" />
+	<ctl name="RX_COMP2 Switch" value="0" />
+	<ctl name="HPHL_COMP Switch" value="1" />
+	<ctl name="HPHR_COMP Switch" value="1" />
         <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="HPHL_RDAC Switch" value="1" />
         <ctl name="HPHR_RDAC Switch" value="1" />
     </path>
-    <!-- Add for ce mode 20181206-->
+    <!-- Add by dzy for ce mode 20181206-->
     <path name="headphones-ce">
         <path name="headphones" />
-        <ctl name="RX_RX0 Digital Volume" value="76" />
-        <ctl name="RX_RX1 Digital Volume" value="76" />
+        <ctl name="RX_RX0 Digital Volume" value="74" />
+        <ctl name="RX_RX1 Digital Volume" value="74" />
     </path>
 
     <path name="headphones-no-ce">
@@ -2309,7 +2293,7 @@
         <ctl name="RX_RX0 Digital Volume" value="84" />
         <ctl name="RX_RX1 Digital Volume" value="84" />
     </path>
-    <!-- Add for ce mode end-->
+    <!-- Add by dzy for ce mode end-->
     <path name="headphones-44.1">
         <ctl name="RX_Native" value="ON" />
         <path name="headphones" />
@@ -2330,7 +2314,6 @@
 
     <path name="headset-mic">
         <path name="amic2" />
-        <ctl name="TX_DEC0 Volume" value="84" />
     </path>
 
     <path name="voice-handset">
@@ -2350,11 +2333,9 @@
     </path>
 
     <path name="voice-speaker-vbat">
-        <path name="speaker-vbat-mono" />
     </path>
 
     <path name="voice-speaker-2-vbat">
-        <path name="speaker-vbat-mono-2" />
     </path>
 
     <path name="voice-speaker-mic">
@@ -2385,7 +2366,7 @@
         <path name="headphones" />
         <path name="speaker" />
     </path>
-    <!-- Add for ce mode 20181206-->
+    <!-- Add by dzy for ce mode 20181206-->
     <path name="speaker-and-headphones-ce">
 	<path name="speaker" />
         <path name="headphones-ce" />
@@ -2449,7 +2430,7 @@
     </path>
 
     <!-- Dual MIC devices -->
-    <!-- modify for dual mic in voice call-->
+    <!-- modify by dzy for dual mic in voice call-->
     <path name="handset-dmic-endfire">
 	<ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" /> 
 	<ctl name="TX DEC0 MUX" value="SWR_MIC" /> 
@@ -2475,7 +2456,7 @@
 	<ctl name="ADC2_MIXER Switch" value="1" /> 
 	<ctl name="ADC2 MUX" value="INP3" /> 
     </path>
-    <!-- modify for dual mic end -->
+    <!-- modify by dzy for dual mic end -->
 
     <path name="dmic-endfire">
         <path name="handset-dmic-endfire" />
@@ -2498,7 +2479,7 @@
         <path name="dmic-endfire" />
     </path>
 
-    <!-- modify for adding camcorder dual mic path 2018/11/8-->
+    <!-- modify by dzy for adding camcorder dual mic path 2018/11/8-->
     <path name="camcorder-dmic">
         <path name="dmic-endfire" />
     </path>
@@ -2514,7 +2495,7 @@
     <path name="voice-rec-dmic-ef-fluence">
         <path name="dmic-endfire" />
     </path>
-    <!-- Modify for use AMIC 20181115-->
+    <!-- Modify by dzy for use AMIC 20181115-->
     <path name="speaker-dmic-broadside">
 	<ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" /> 
 	<ctl name="TX DEC0 MUX" value="SWR_MIC" /> 
@@ -2614,7 +2595,7 @@
     </path>
 
     <path name="voice-tty-vco-handset-mic">
-        <path name="dmic3" />
+        <path name="amic1" />
     </path>
 
     <path name="unprocessed-handset-mic">
@@ -2622,6 +2603,7 @@
     </path>
 
     <path name="unprocessed-mic">
+	<ctl name="ADC1 Volume" value="4" />
         <path name="unprocessed-handset-mic" />
     </path>
 
