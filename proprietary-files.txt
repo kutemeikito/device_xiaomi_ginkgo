@@ -2714,3 +2714,11 @@ vendor/lib/modules/msm_11ad_proxy.ko:vendor/lib/modulesp/msm_11ad_proxy.ko
 vendor/lib/modules/qca_cld3_wlan.ko:vendor/lib/modulesp/qca_cld3_wlan.ko
 vendor/lib/modules/rdbg.ko:vendor/lib/modulesp/rdbg.ko
 vendor/lib/modules/wil6210.ko:vendor/lib/modulesp/wil6210.ko
+
+lib64/android.hardware.camera.provider@2.4.so
+lib/android.hardware.camera.provider@2.4.so
+vendor/bin/hw/android.hardware.camera.provider@2.4-service
+vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+
