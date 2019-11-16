@@ -1,3 +1,6 @@
 # Files in rootfs
 /bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0
 /firmware(/.*)?          u:object_r:firmware_file:s0
+
+# HALs
+/system/bin/hw/lineage\.trust@1\.0-service	u:object_r:hal_trust_default_exec:s0
