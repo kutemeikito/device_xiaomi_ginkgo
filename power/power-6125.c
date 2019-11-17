@@ -82,11 +82,6 @@ int  power_hint_override(struct power_module *module, power_hint_t hint,
     return HINT_NONE;
 }
 
-int  set_interactive_override(struct power_module *module, int on)
-{
-    return HINT_HANDLED; /* to set hints for display on and off. Not in use now */
-}
-
 /* Video Encode Hint */
 static void process_video_encode_hint(void *metadata)
 {

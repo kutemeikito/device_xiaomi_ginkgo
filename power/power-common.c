@@ -111,25 +111,3 @@ void power_hint(power_hint_t hint, void *data)
         break;
     }
 }
-
-int __attribute__ ((weak)) set_interactive_override(int on)
-{
-    return HINT_NONE;
-}
-
-void set_interactive(int on)
-{
-    if (!on) {
-        /* Send Display OFF hint to perf HAL */
-        perf_hint_enable(VENDOR_HINT_DISPLAY_OFF, 0);
-    } else {
-        /* Send Display ON hint to perf HAL */
-        perf_hint_enable(VENDOR_HINT_DISPLAY_ON, 0);
-    }
-
-    if (set_interactive_override(on) == HINT_HANDLED) {
-        return;
-    }
-
-    ALOGI("Got set_interactive hint");
-}
