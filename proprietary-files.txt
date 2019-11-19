@@ -1922,7 +1922,7 @@ vendor/lib64/hw/power.default.so
 vendor/lib64/hw/power.qcom.so
 
 # QMI
-etc/permissions/qti_libpermissions.xml
+etc/permissions/qti_libpermissions.xml|73944fe161d14ff803093a3cd0b3f3851acb0394
 etc/permissions/qti_permissions.xml
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
