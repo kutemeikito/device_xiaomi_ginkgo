@@ -1,0 +1,42 @@
+[
+  {
+    "repository": "Ginkgo-Android-P/device_xiaomi_ginkgo",
+    "target_path": "device/xiaomi/ginkgo",
+    "branch":      "9.0"
+  },
+  {
+    "repository": "Xiaomi-trinket-dev/vendor_xiaomi_ginkgo",
+    "target_path": "vendor/xiaomi/ginkgo",
+    "branch":      "9.0"
+  },
+  {
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch":      "lineage-16.0"
+  },
+  {
+    "repository": "PixelExperience/hardware_qcom_display-caf_sm8150",
+    "target_path": "hardware/qcom/display-caf/sm8150",
+    "branch":      "pie-caf"
+  },
+  {
+    "repository": "PixelExperience/hardware_qcom_media-caf_sm8150",
+    "target_path": "hardware/qcom/media-caf/sm8150",
+    "branch":      "pie-caf"
+  },
+  {
+    "repository": "PixelExperience/hardware_qcom_audio-caf_sm8150",
+    "target_path": "hardware/qcom/audio-caf/sm8150",
+    "branch":      "pie-caf"
+  },
+  {
+    "repository": "Ginkgo-Android-P/platform_frameworks_native",
+    "target_path": "frameworks/native",
+    "branch":      "9.0"
+  }
+  {
+    "repository": "Ginkgo-Android-P/platform_vendor_syberia",
+    "target_path": "vendor/syberia",
+    "branch":      "9.0"
+  }
+]
