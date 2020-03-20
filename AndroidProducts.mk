@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_ginkgo.mk
+    $(LOCAL_DIR)/ancient_ginkgo.mk

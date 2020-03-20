@@ -1,2 +1,2 @@
 export SKIP_ABI_CHECKS=true
-add_lunch_combo syberia_ginkgo-userdebug
+add_lunch_combo ancient_ginkgo-userdebug
