@@ -46,7 +46,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := 12.0
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-12.0/bin
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/nusantaraclang12/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 TARGET_KERNEL_ADDITIONAL_FLAGS := AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 TARGET_KERNEL_SOURCE := kernel/xiaomi/ginkgo
