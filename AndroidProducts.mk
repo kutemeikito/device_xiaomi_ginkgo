@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_ginkgo.mk
+    $(LOCAL_DIR)/ancient_ginkgo.mk
