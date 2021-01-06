@@ -6,9 +6,6 @@
 
 android_app {
     name: "XiaomiParts",
-    defaults: [
-        "SettingsLibDefaults",
-    ],
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
