@@ -22,3 +22,6 @@ persist.vendor.sys.fp.      u:object_r:vendor_fp_prop:s0
 persist.vendor.fpc.         u:object_r:vendor_fp_prop:s0
 persist.sys.fp.             u:object_r:vendor_fp_prop:s0
 sys.vendor.fp.              u:object_r:vendor_fp_prop:s0
+
+# Netflix
+ro.netflix.bsp_rev                 u:object_r:vendor_netflix_prop:s0
