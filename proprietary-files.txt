@@ -1,16 +1,16 @@
-# Device proprietary files - from ginkgo MIUI 21.3.17 China Beta package, unless pinned
+# Device proprietary files - from ginkgo MIUI 21.4.7 China Beta package, unless pinned
 
 # ADSP - from LA.UM.9.11.r1-02800-NICOBAR.0
 vendor/bin/adsprpcd|c8a45eb83a6d70dcbcc1b8ec574391b49e8ca8b9
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|96b08f4e97ef20e20a8d7f89212a5549abe66666
 vendor/lib/libadsp_default_listener.so|aebe95ff3eeb279a642770db5f1383e5aefc4d2f
-vendor/lib/libadsprpc.so|5ca6759bd24276b05ef25ebfbf181e942b9d8a89
-vendor/lib/libmdsprpc.so|7d749e52e322e37438135e5aec012af26c8f9ba8
-vendor/lib/libsdsprpc.so|4a02a559c07175ee180688d65cb2cafdd8142070
+vendor/lib/libadsprpc.so|51b7f989926ebcc9b91aff6ff4cf7f01d00fbeac
+vendor/lib/libmdsprpc.so|bfa5705d1687a7fb823cf1dc17353422c2b6d515
+vendor/lib/libsdsprpc.so|ad98ee6799a1014151eaeb49533d93a6d96ce1e2
 vendor/lib64/libadsp_default_listener.so|aa3b51b544032a250ab02687c0200152f80a23dd
-vendor/lib64/libadsprpc.so|7c31e4e2b94fa03f1e03c876fa583ad8f4a13a1d
-vendor/lib64/libmdsprpc.so|bba8a7fff49e41e7aa26c13ef26bca2f24bf36d7
-vendor/lib64/libsdsprpc.so|abadbab1ed4e1e9c826cb1242f7aea12e571e312
+vendor/lib64/libadsprpc.so|cb1f9cc789c0bf7730bded482ac1cbde401d60bc
+vendor/lib64/libmdsprpc.so|667f740e50d0d4e78f003c2f31d115a1e04258ca
+vendor/lib64/libsdsprpc.so|f2a1d1ecc7191176d4dc061c484d021d78257a03
 
 # ADSP modules - from LA.UM.9.11.r1-02800-NICOBAR.0
 vendor/lib/rfsa/adsp/libVC1Dec.so|732ede3ede9e6e1b09c439156f62a07d8fa0ee3e
@@ -1719,7 +1719,7 @@ vendor/lib/libgpudataproducer.so|3a822861ae80591e3b99652db42d8717342b845a
 vendor/lib/libgsl.so|a40e5be20397c0da520a8509472ce08257da2d62
 vendor/lib/libllvm-glnext.so|a843b53ef49833be34f9bc905c3daa146c5b2b0e
 vendor/lib/libllvm-qcom.so|bb021af310c0a31dd04d383f5fdd29809cb22f8e
-vendor/lib/libpvr.so|f906eeafbfc4012b78e8447b75b12dc737a4dd51
+vendor/lib/libpvr.so|27238c444a78ccc00920c4918e8589b809360ab2
 vendor/lib/librs_adreno.so|dcb174815c3ece87980e431d77320d094a76cd9b
 vendor/lib64/egl/eglSubDriverAndroid.so|aa2cd4ef63e7a5395c5f82b7d02e3a93b80b103d
 vendor/lib64/egl/libEGL_adreno.so|b63a4e8b532211787d414f92cdb5fcaba7f69e27
@@ -1739,31 +1739,31 @@ vendor/lib64/libgpudataproducer.so|04afe14204b88e4eabe0df7fa6efb6eb19772529
 vendor/lib64/libgsl.so|cb861a86280821a0d659d1796a840a41ad4da925
 vendor/lib64/libllvm-glnext.so|c2eb1493674aafc5b2378f2f67195911f301fa65
 vendor/lib64/libllvm-qcom.so|43474c2623b5656c8b83e7af5873190414dcff81
-vendor/lib64/libpvr.so|e89cb16c03c676623230b4de15deb6549bf15e8b
+vendor/lib64/libpvr.so|14d8a17ef7a00261912281529e97e1356001eb33
 vendor/lib64/librs_adreno.so|d8bee70cc12ab5c6a979427e24fb7843fddae08b
 
 # Graphics - SDM - from LA.UM.9.11.r1-02800-NICOBAR.0
 vendor/lib/libdisp-aba.so|3f78e36e0a16668a45462070e4243bbdcf1bcdbb
 vendor/lib/libdisplayqos.so|08488a3d75cf0ad0d20251a12c51b53cd8823527
-vendor/lib/libdpps.so|68735a8a09a52718adcffc9ed6cceaf826706057
+vendor/lib/libdpps.so|ef3ec785740e69a4b49c18105a0353b4e950683f
 vendor/lib/libhdr_tm.so|e8697773d1868876f36e98dc68500919668c9acb
 vendor/lib/libqseed3.so|4bd5267c3a360de23a65cdb8b3996191851e9648
 vendor/lib/libsdedrm.so|03e5dc4324736912d4480c9fd8300c89f8148b22
 vendor/lib/libsdm-color.so|408049c0d33c18466faafdc956a967ccb3f19dd9
 vendor/lib/libsdm-colormgr-algo.so|881ffdf26992858dcc3ac6024cf1c6deeaed0cfe
-vendor/lib/libsdm-diag.so|d173de1d03f266e8e38d81eb9e08b78d4c180c70
+vendor/lib/libsdm-diag.so|d891c661bd5bb3752c44f1ce9e99fa8f5d8d9c27
 vendor/lib/libsdm-disp-vndapis.so|2aa9e2c14b069b7acbe339499f3a35714dcc5c8a
 vendor/lib/libsdmextension.so|f7fbd9ba620ab9a8eae3604267954f685ddd3e7f
 vendor/lib/libtinyxml2_1.so|f00b8f6218271d57fd1fb67b192db956e42e66fb
 vendor/lib64/libdisp-aba.so|b7c8567c3079372479c85834ba1aab4e2eee5522
 vendor/lib64/libdisplayqos.so|a263254a5252f4b93237a7972451233578635d2d
-vendor/lib64/libdpps.so|d98eb5e0c75286d65bbbcf5c594084fadd83f6b9
+vendor/lib64/libdpps.so|1b5043533dbaac41f9bc2733c441886538e2f1a1
 vendor/lib64/libhdr_tm.so|e4638c3bf21685b84650c5858bafe384ab2118ff
 vendor/lib64/libqseed3.so|1395834daf3c6cd07acbdbc44110decb3be362c2
 vendor/lib64/libsdedrm.so|62346873d1e378acbeff0efd089632d8d132e197
 vendor/lib64/libsdm-color.so|7cc07a7c5097babeb4140ab5c20e1e15d3edfcfb
 vendor/lib64/libsdm-colormgr-algo.so|11b65733d87ff65633a5fe8f4207dde12391625c
-vendor/lib64/libsdm-diag.so|55dafc05ba68666f10412a534f7122d7f45bf403
+vendor/lib64/libsdm-diag.so|2d3c04133ac1a8e030c088fd4a34a52d2eb91173
 vendor/lib64/libsdm-disp-vndapis.so|9ab6725a5efba29b77d1d6ab33e10e3ff3296960
 vendor/lib64/libsdmextension.so|3f1d81e0025de6721ed45697bf97003dd57b2847
 vendor/lib64/libtinyxml2_1.so|92101861d95cbdf9625d192d0b2295baa5960b68
