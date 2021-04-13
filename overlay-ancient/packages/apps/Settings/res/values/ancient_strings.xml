@@ -25,10 +25,10 @@
     <string name="ancient_device_name_summary">Redmi Note 8/8T</string>
     <string name="ancient_chipset_type_summary">Qualcomm Snapdragon™ 665</string>
     <string name="ancient_gpu_summary">Adreno 610</string>
-    <string name="ancient_camera_mp_summary">48MP+2MP+2MP+2MP Quad Camera</string>
+    <string name="ancient_camera_mp_summary">48MP+8MP+2MP+2MP Quad Camera</string>
     <string name="ancient_screen_type_summary">IPS LCD FHD+ 6.3 Screen</string>
 
     <!-- AncientOS About Maintainer Info -->
-    <string name="maintainer_name">Erwin Abu Bakar Sidik</string>
+    <string name="maintainer_name">Erwin Ganteng And Introdructor </string>
 
 </resources>
