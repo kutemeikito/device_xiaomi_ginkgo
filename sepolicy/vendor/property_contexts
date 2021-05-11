@@ -24,4 +24,7 @@ persist.sys.fp.             u:object_r:vendor_fp_prop:s0
 sys.vendor.fp.              u:object_r:vendor_fp_prop:s0
 
 # Netflix
-ro.netflix.bsp_rev                 u:object_r:vendor_netflix_prop:s0
+ro.netflix.bsp_rev          u:object_r:vendor_netflix_prop:s0
+
+# Wifi Display 
+persist.vendor.setWFDInfo.  u:object_r:vendor_wfd_sys_debug_prop:s0
