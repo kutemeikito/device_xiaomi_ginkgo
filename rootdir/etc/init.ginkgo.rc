@@ -18,6 +18,7 @@ on boot
     # DT2W
     chown system system /sys/touchpanel/double_tap
     chmod 0660 /sys/touchpanel/double_tap
+    write /sys/touchpanel/double_tap 1
 
     # Kernelspace battery saver
     chown system system /sys/module/battery_saver/parameters/enabled
