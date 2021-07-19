@@ -35,6 +35,9 @@ on boot
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
 
+    # USB Fast Charge
+    write /sys/kernel/fast_charge/force_fast_charge 1
+
     # Thermal Profile
     write /sys/class/thermal/thermal_message/sconfig 0
 
