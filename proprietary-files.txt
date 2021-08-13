@@ -1531,20 +1531,9 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|a4a1d0cb3aefad65f6566f6bc31dd70f
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
-
-# DRM - Widevine L1 - from ginkgo MIUI V12.0.2.0.QCOMIXM
-vendor/lib64/liboemcrypto.so|4bc107c69108c71b53d8a04c9f4d4e3f7ece18e7
-modem/image/widevine.b00:vendor/firmware/widevine.b00|02440d68e90e2606978d705a6de0aca576be6e66
-modem/image/widevine.b01:vendor/firmware/widevine.b01|5d728eb86180d82a6a8b6a5b124e995f6b9841c2
-modem/image/widevine.b02:vendor/firmware/widevine.b02|0c6041480787fff2f7f79782bc180c5e0e391126
-modem/image/widevine.b03:vendor/firmware/widevine.b03|86eb9c5b5ef411f1de65efeab8571bf996088840
-modem/image/widevine.b04:vendor/firmware/widevine.b04|8418e1096d854bc0f91c2fed02aba8237cea1afb
-modem/image/widevine.b05:vendor/firmware/widevine.b05|14e522435fe75b168168e7e5dc4aa6cad0d753a1
-modem/image/widevine.b06:vendor/firmware/widevine.b06|1f8cbb03036616214eb01bdaf9cc04e6ac0af8bc
-modem/image/widevine.b07:vendor/firmware/widevine.b07|c6fb2f2db136ce0bf45bd53dd9bde0287d936429
-modem/image/widevine.mdt:vendor/firmware/widevine.mdt|43fdadd783b66c4448529c68b493cd9005e426df
 
 # DSP - from LA.UM.9.11.r1-03900-NICOBAR.0
 vendor/bin/dspservice|a8eb76af6150bbf29c12b76b00ab469b99f563f7
@@ -2010,7 +1999,6 @@ vendor/lib/libqmiservices.so|ed6785cccaa6e01be1af7e7a8c8d696eeb78e05f
 
 # Radio - from LA.UM.9.11.r1-03900-NICOBAR.0
 etc/permissions/privapp-permissions-qti.xml|3eda27003bad39514039190d0d7eb675ba034cb9
-etc/sysconfig/qti_whitelist.xml|36d11f2735fcd9ad3ac5639f3c0bb011941b8335
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml|42f4553b61731e56d253766554d4479519cea3ff
 -system_ext/app/DeviceInfo/DeviceInfo.apk|4ff56a7e5abfe2faeb95ae8c967ef4cf72589b07
 -system_ext/app/DynamicDDSService/DynamicDDSService.apk|502329cf448eb3b7e2736fcad59e4eacc48f93e6
