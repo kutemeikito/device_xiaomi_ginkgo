@@ -32,6 +32,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_USES_BLUR := true
 PIXEL_STUFF := true
+TARGET_SUPPORTS_QUICK_TAP := true
 $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Device identifier
