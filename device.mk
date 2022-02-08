@@ -10,7 +10,8 @@ $(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-xd
 
 PRODUCT_PACKAGES += \
     GinkgoMiuiCamera \
