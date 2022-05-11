@@ -139,6 +139,9 @@ persist.vendor.data.mode=concurrent
 ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.use_data_netmgrd=true
 
+# Dalvik
+dalvik.vm.systemuicompilerfilter=speed
+
 # Display
 debug.egl.hw=0
 debug.mdpcomp.logs=0
