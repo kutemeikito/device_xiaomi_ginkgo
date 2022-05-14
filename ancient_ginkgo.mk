@@ -33,6 +33,8 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_USES_BLUR := true
 PIXEL_STUFF := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Device identifier
@@ -44,6 +46,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/redfin/redfin:12/SQ1A.220205.002/8010174:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:12/SQ1A.220505.002/8353555:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redfin-user 12 SQ1A.220205.002 8010174 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 12 SQ1A.220505.002/8353555 release-keys"
