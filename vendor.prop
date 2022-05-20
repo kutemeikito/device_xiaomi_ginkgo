@@ -191,6 +191,9 @@ ro.hardware.keystore_desede=true
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # RIL
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
