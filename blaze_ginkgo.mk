@@ -24,24 +24,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
-$(call inherit-product, vendor/xdroid/config/common.mk)
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
-# Inherit some common Xdroid stuff
-XDROID_BOOT := 1080
-XDROID_MAINTAINER := Ryuzenn
+# Inherit some common Blaze stuff
+BLAZE_BUILD_TYPE := PERSONAL
+BLAZE_MAINTAINER := Ryuzenn
+TARGET_BOOT_ANIMATION_RES := 1080
 
 
 #Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 #GMS Settings
-TARGET_INCLUDE_STOCK_ARCORE := true
+WITH_GAPPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Device identifier
-PRODUCT_NAME := xdroid_ginkgo
+PRODUCT_NAME := blaze_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
