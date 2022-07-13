@@ -13,3 +13,4 @@ Device Changelogs:
 
 Rom Notes :
 - SystemUI/QS : Switch Back Android 12 QS Style (Bcs Im not like Round QS Concept, Sorry Owner :) )
+- Gapps Version, Don't ask Vanilla or Gapps
