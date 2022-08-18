@@ -83,6 +83,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>android.hardware.wifi.supplicant</name>
+        <version>1.0-4</version>
+        <interface>
+             <name>ISupplicant</name>
+             <instance>default</instance>
+             <instance>wigigp2p</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.sigma_miracast</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -117,4 +126,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+   <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.wifi.supplicant</name>
+        <version>2.0-3</version>
+        <interface>
+            <name>ISupplicantVendor</name>
+            <instance>default</instance>
+            </interface>
+   </hal>
 </compatibility-matrix>

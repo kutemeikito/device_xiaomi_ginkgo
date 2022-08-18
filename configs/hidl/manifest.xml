@@ -569,6 +569,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>slot2</instance>
         </interface>
     </hal>
+    <!-- WIFI -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.wifi.supplicant</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.3::ISupplicantVendor/default</fqname>
+    </hal>
     <!-- Fingerprint -->
         <hal format="hidl">
         <name>com.fingerprints.extension</name>
