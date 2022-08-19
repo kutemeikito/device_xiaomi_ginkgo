@@ -558,6 +558,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- configstore -->
+    <hal format="hidl">
+        <name>android.hardware.configstore</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
+    </hal>
     <!-- IWLAN -->
     <hal format="hidl">
         <name>vendor.qti.hardware.data.iwlan</name>
@@ -607,4 +613,5 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
 </manifest>
+
 
