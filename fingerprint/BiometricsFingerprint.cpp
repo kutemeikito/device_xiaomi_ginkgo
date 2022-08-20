@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.ginkgo"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.ginkgo"
 
 #include <log/log.h>
 
@@ -26,7 +26,7 @@ namespace android {
 namespace hardware {
 namespace biometrics {
 namespace fingerprint {
-namespace V2_1 {
+namespace V2_3 {
 namespace implementation {
 
 // Supported fingerprint HAL version
@@ -153,7 +153,7 @@ Return<uint64_t> BiometricsFingerprint::setNotify(
         const sp<IBiometricsFingerprintClientCallback>& clientCallback) {
     std::lock_guard<std::mutex> lock(mClientCallbackMutex);
     mClientCallback = clientCallback;
-    // This is here because HAL 2.1 doesn't have a way to propagate a
+    // This is here because HAL 2.3 doesn't have a way to propagate a
     // unique token for its driver. Subsequent versions should send a unique
     // token for each call to setNotify(). This is fine as long as there's only
     // one fingerprint device on the platform.
@@ -389,8 +389,21 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
     }
 }
 
-}  // namespace implementation
-}  // namespace V2_1
+Return<bool> BiometricsFingerprint::isUdfps(uint32_t /* sensorId */) {
+    return false;
+}
+
+Return<void> BiometricsFingerprint::onFingerDown(uint32_t /* x */, uint32_t /* y */,
+                                                float /* minor */, float /* major */) {
+    return Void();
+}
+
+Return<void> BiometricsFingerprint::onFingerUp() {
+    return Void();
+}
+
+} // namespace implementation
+}  // namespace V2_3
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware
