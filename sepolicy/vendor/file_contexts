@@ -31,7 +31,7 @@
 /dev/socket/audio_hw_socket                                                          u:object_r:audio_socket:s0
 
 # Fingerprint
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.ginkgo u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.ginkgo u:object_r:hal_fingerprint_default_exec:s0
 
 # Fingerprint devices
 /dev/goodix_fp                                                                                 u:object_r:fingerprint_device:s0
