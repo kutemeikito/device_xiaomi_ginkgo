@@ -139,7 +139,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_1.xml
 
 # Doze
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     XiaomiDoze
 
 # DRM
@@ -307,10 +307,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_willow/android.hardware.nfc.uicc.xml
 
 # Parts
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     XiaomiParts
 
-PRODUCT_COPY_FILES += \
+# PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/parts/init.xiaomiparts.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.xiaomiparts.rc
 
 # Power
