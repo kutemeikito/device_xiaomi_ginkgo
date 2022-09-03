@@ -20,6 +20,9 @@ Changelogs : 03 Sept 2022
 - ginkgo: gps: Fix usage of or operator on booleans 
 - ginkgo: Drop audio.a2dp.default 
 - ginkgo: Remove ndk_platform backend. Use the ndk backend. 
+- Xiaomi Parts still Work (KCAL, etc)
+- Miui Camera Included
+
 
 Known Issues
 - Dialer No Sound
