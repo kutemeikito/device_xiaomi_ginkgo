@@ -27,7 +27,7 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 $(call inherit-product, vendor/xdroid/config/common.mk)
 
 # Inherit some common Xdroid stuff
-XDROID_BOOT := 1080
+XDROID_BOOT := 720
 XDROID_MAINTAINER := Ryuzenn
 
 
