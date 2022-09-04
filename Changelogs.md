@@ -25,5 +25,5 @@ Changelogs : 03 Sept 2022
 
 
 Known Issues
-- Dialer No Sound
+- Dialer No Sound When Calling
 - Portait Not Work
