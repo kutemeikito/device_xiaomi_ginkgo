@@ -25,7 +25,7 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
 # Inherit some common xdroidOSS stuff
 $(call inherit-product, vendor/xdroid/config/common.mk)
-XDROID_BOOT := 1080
+XDROID_BOOT := 720
 XDROID_MAINTAINER := Enn's
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
