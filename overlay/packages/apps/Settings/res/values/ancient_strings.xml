@@ -21,6 +21,9 @@
     <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
     <bool name="config_supportBatteryHealth">true</bool>
 
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
+
     <!-- AncientOS Device Info -->
     <string name="ancient_device_name_summary">Redmi Note 8/8T</string>
     <string name="ancient_chipset_type_summary">Qualcomm Snapdragon™ 665</string>
