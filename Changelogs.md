@@ -1,3 +1,9 @@
+Changelogs : 05 Oct 2022
+- Sync Last ROM Source
+- fix dialer no sound when call
+- fix portait mode
+- use last Ryzen Kernel v4.14.295
+
 Changelogs : 03 Sept 2022
 - Initial A13 Build
 - ginkgo: Remove unnecessary static libs
@@ -23,7 +29,3 @@ Changelogs : 03 Sept 2022
 - Xiaomi Parts still Work (KCAL, etc)
 - Miui Camera Included
 
-
-Known Issues
-- Dialer No Sound When Calling (FIX)
-- Portait Not Work
