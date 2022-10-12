@@ -821,4 +821,7 @@
          Off by default, since the framebuffer readback used to implement the
          fading edges is prohibitively expensive on most GPUs. -->
     <bool name="config_ui_enableFadingMarquee">true</bool>
+
+    <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
+   <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
 </resources>
