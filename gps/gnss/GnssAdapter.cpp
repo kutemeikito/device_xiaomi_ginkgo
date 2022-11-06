@@ -1040,8 +1040,6 @@ std::vector<LocationError> GnssAdapter::gnssUpdateConfig(const std::string& oldM
         errsList.insert(errsList.begin(), count, LOCATION_ERROR_SUCCESS);
     }
 
-    std::string serverUrl = getServerUrl();
-    std::string moServerUrl = getMoServerUrl();
 
     int serverUrlLen = serverUrl.length();
     int moServerUrlLen = moServerUrl.length();
