@@ -63,10 +63,7 @@ typedef enum {
     LOCATION_ERROR_GEOFENCES_AT_MAX,
     LOCATION_ERROR_NOT_SUPPORTED,
     LOCATION_ERROR_TIMEOUT,
-<<<<<<< HEAD
-=======
     LOCATION_ERROR_GNSS_DISABLED,
->>>>>>> 72ddb3845f56b496c519b12cf7616baf71245b64
 } LocationError;
 
 // Flags to indicate which values are valid in a Location
