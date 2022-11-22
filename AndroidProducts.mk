@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_ginkgo.mk
+    $(LOCAL_DIR)/ryzen_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_ginkgo-user \
-    xdroid_ginkgo-userdebug \
-    xdroid_ginkgo-eng
+    ryzen_ginkgo-user \
+    ryzen_ginkgo-userdebug \
+    ryzen_ginkgo-eng
