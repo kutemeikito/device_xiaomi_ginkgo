@@ -45,6 +45,13 @@ iorapd.readahead.enable=true
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 ro.iorapd.enable=true
 
+# Battery Saving
+ro.vendor.use_data_netmgrd=true 
+ro.vold.umsdirtyratio=20 
+ro.ril.disable.power.collapse=0 
+power.saving.mode=1
+pm.sleep_mode=1
+
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
