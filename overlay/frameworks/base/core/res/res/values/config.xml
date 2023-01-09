@@ -824,4 +824,7 @@
 
     <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
    <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
+
+    <!-- Whether the new Auto Selection Network UI should be shown -->
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
 </resources>
