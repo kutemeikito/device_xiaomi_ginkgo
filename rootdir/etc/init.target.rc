@@ -489,3 +489,6 @@ on post-fs && property:ro.boot.product.hardware.sku=ginkgo
 
 on post-fs && property:ro.boot.product.hardware.sku=willow
     mount none /vendor/firmware_mnt/image/bdf_c3x.bin /vendor/firmware_mnt/image/bdwlan.bin bind
+
+   # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
