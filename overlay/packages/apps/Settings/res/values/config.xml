@@ -31,4 +31,7 @@
          devices will be able to vary their amplitude but do not possess enough dynamic range to
          have distinct intensity levels -->
     <bool name="config_vibration_supports_multiple_intensities">true</bool>
+
+    <!-- Whether memory from app_info_settings is available or not. -->
+    <bool name="config_show_app_info_settings_memory">true</bool>
 </resources>
