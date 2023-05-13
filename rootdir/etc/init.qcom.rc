@@ -35,7 +35,11 @@ on early-init
     mount tracefs tracefs /sys/kernel/tracing
     chmod 0755 /sys/kernel/tracing
 
-  # create symlink for vendor mount points
+    # Remove some data cache
+    rm /data/resource-cache
+    rm /data/system/package_cache
+
+    # create symlink for vendor mount points
     symlink /vendor/firmware_mnt /firmware
     symlink /vendor/bt_firmware /bt_firmware
     symlink /vendor/dsp /dsp
