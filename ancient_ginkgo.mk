@@ -24,12 +24,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
-$(call inherit-product, vendor/xdroid/config/common.mk)
 
-# Inherit some common Xdroid stuff
-XDROID_BOOT := 720
-XDROID_MAINTAINER := Ryuzenn
-
+# Inherit some common AncientRoms stuff
+ANCIENT_OFFICIAL ?= true
+ANCIENT_GAPPS ?= true
+TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 #Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -39,12 +39,13 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
+USE_PIXEL_CHARGING := true
 
 # Device identifier
-PRODUCT_NAME := xdroid_ginkgo
+PRODUCT_NAME := ancient_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 8
+PRODUCT_MODEL := Redmi Note 8/8T
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

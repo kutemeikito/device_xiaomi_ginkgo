@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2020 Xdroid
+# Copyright (C) 2020 AncientOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_ginkgo.mk
+    $(LOCAL_DIR)/ancient_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_ginkgo-user \
-    xdroid_ginkgo-userdebug \
-    xdroid_ginkgo-eng
+    ancient_ginkgo-user \
+    ancient_ginkgo-userdebug \
+    ancient_ginkgo-eng
