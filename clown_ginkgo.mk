@@ -51,6 +51,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/cheetah/cheetah:13/TQ3A.230805.001/10316531:user/release-keys"
+BUILD_FINGERPRINT := "google/cheetah/cheetah:13/TQ3A.230901.001/10750268:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cheetah-user 13 TQ3A.230805.001/10316531 release-keys"
+    PRIVATE_BUILD_DESC="cheetah-user 13 TQ3A.230901.001/10750268 release-keys"
