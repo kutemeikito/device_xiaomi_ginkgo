@@ -176,7 +176,6 @@ vendor/lib/libmpbase.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
 vendor/lib/libSNPE.so
-vendor/lib/libswvdec.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
 vendor/lib/libVDClearShot.so
@@ -189,7 +188,6 @@ vendor/lib/miwatermark.so
 vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/libseemore.so
-vendor/lib64/libswvdec.so
 
 # Camera actuator
 vendor/lib/libactuator_ginkgo_gc2375h_ofilm_ii_dw9714.so
@@ -1782,49 +1780,32 @@ vendor/lib/libqcodec2.so|c5673b5f377fc855f1467ea2b3c3ed47ca68bbfb
 vendor/lib64/libqcodec2.so|ebcb7ae53c292d689b57450120e280c5797cfaa1
 
 # Media - from LA.UM.9.11.r1-04500-NICOBAR.0
--vendor/lib/libMpeg4SwEncoder.so|92698c2830156bbca6297ad599d9e0f916139f00
--vendor/lib64/libMpeg4SwEncoder.so|46cca30c76db78d8c5d6b99c2c7e5a00c414bc4f
-vendor/lib/libAlacSwDec.so|1d074a0415ee358cd13c981e35266cff4c6863ce
-vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
-vendor/lib/libFlacSwDec.so|01c7a51d93c2fe447e23c1210832b39b171393e3
 vendor/lib/libI420colorconvert.so|976e00c9e8966e4c7100099666846770d34f4153
 vendor/lib/libOmxAacDec.so|9dd31bc40cde583f1b0e2b4a9fc802145ef69164
 vendor/lib/libOmxAlacDec.so|fa50ab06523c4af5c01255afcc7bb98700db68f8
-vendor/lib/libOmxAlacDecSw.so|150f1fee193918792a88797766ddf12d1a388efd
 vendor/lib/libOmxAmrDec.so|f7b31c4c0b8acd8422573df6fcfb1103062d6f9c
 vendor/lib/libOmxAmrwbplusDec.so|0e88d271c603e0d6a231a24aca51561d2b604794
 vendor/lib/libOmxApeDec.so|f0fac8e060577bd6b11d555778fe252be48afbac
-vendor/lib/libOmxApeDecSw.so|f3e64e54808f57f146173532335ea45db1fb54f4
 vendor/lib/libOmxDsdDec.so|f74936badeb8303b2bb17475b9cd157b1c81131c
 vendor/lib/libOmxEvrcDec.so|90bbf4baf4f8b830534a2f94aedef9bd44e81a13
 vendor/lib/libOmxG711Dec.so|922eba61fdcad6619fa03f456e066e572e0c6ff9
 vendor/lib/libOmxQcelp13Dec.so|1836ba707a7a1642ec0edf236be0e713f18bb90b
-vendor/lib/libOmxSwVdec.so|07fbe117dc1aa5b657981c50bd77e8fc1954f600
-vendor/lib/libOmxSwVencMpeg4.so|ff21c167212938a695877847c12b342af3ec84e8
-vendor/lib/libOmxWmaDec.so|6c8840e2d685a665c633d301afe916d83536e3fd
 vendor/lib/libOmxVideoDSMode.so|979e5cb96260c8fa60eb55825a2a22273f524c65
-vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
+vendor/lib/libOmxWmaDec.so|6c8840e2d685a665c633d301afe916d83536e3fd
 vendor/lib/libmm-color-convertor.so|22d7b8f77d0f19826743206d79bdf9a6a8c9e18f
 vendor/lib/libmmosal.so|a2203f5be5dc1ee10d2f5da8f167a46acb0a660e
 vendor/lib/vendor.qti.hardware.vpp@1.1.so|d3390ff80287d5b5455391315710e09a9fa916e3
 vendor/lib/vendor.qti.hardware.vpp@1.2.so|add78a07a84d8c156aac20e85374d5e4ed278e32
 vendor/lib/vendor.qti.hardware.vpp@1.3.so|ff0ccc8c858f12d052a9dde1170f2700a8480ae9
-vendor/lib64/libAlacSwDec.so|9fbfad65ffca33e1ac480e9cb056467ac75a6d5a
-vendor/lib64/libApeSwDec.so|76d3cc02ca1c3cdc3c71e57dc6e53027d2bf3d37
-vendor/lib64/libFlacSwDec.so|002aa39927e75568efb81c7ae3a044c694babfc3
 vendor/lib64/libI420colorconvert.so|e2d682f83c8f55276836903aa7701ef201edcc83
 vendor/lib64/libOmxAacDec.so|05cfb2faba7d8feb3f3f7b72cd34bc2b0d6670c5
 vendor/lib64/libOmxAlacDec.so|cea46680c778fe87252422205ebf973fcd220db9
-vendor/lib64/libOmxAlacDecSw.so|3ecf891368d0ad84903b792303ef841dc24f91c1
 vendor/lib64/libOmxAmrDec.so|bb7d4a66d394a9ea3f7d988cadeecb092ffdf47f
 vendor/lib64/libOmxAmrwbplusDec.so|9f743c19f0753afcb5bcb8475a7560c0c13d29d6
 vendor/lib64/libOmxApeDec.so|3246c5704553705134baffcb5b4f9c63df6f5d65
-vendor/lib64/libOmxApeDecSw.so|6ec15cb9a251a35e7f7d427dcf0b0e945825518f
 vendor/lib64/libOmxEvrcDec.so|5e3562bdc1195c22a4a029931b745a6af7362ef2
 vendor/lib64/libOmxG711Dec.so|5547aa41c05f1eab9f45bc9bd08c40d12a94c6e0
 vendor/lib64/libOmxQcelp13Dec.so|2c9039f7a6a11056a15d7d71f1cf551b5835ec93
-vendor/lib64/libOmxSwVdec.so|959de8d76e50a2f620252efd4ad2868168d29d57
-vendor/lib64/libOmxSwVencMpeg4.so|077d08084b9259d01bc733fc31ce1f81a39970ba
 vendor/lib64/libOmxWmaDec.so|55df18e39db5ef9d52e0c958eb261d885d94e194
 vendor/lib64/libmm-color-convertor.so|f169b7f24612b9a0c93b9d2eeb29cec04b0e4ec8
 vendor/lib64/libmmosal.so|37b9e35f22eba91307acaa120adb23700838a810
