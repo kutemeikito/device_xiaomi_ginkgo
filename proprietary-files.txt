@@ -1933,8 +1933,8 @@ vendor/bin/qtisetprop|232b6b778234ecf9806f4b9d9a4de9c28b70c108
 vendor/bin/rmt_storage|ab3663bd440855055e83d9ed8d56bfd729a5031f
 vendor/bin/shsusrd|3371155f342a4950d0968c3a34edc767c869df05
 vendor/bin/tftp_server|32fbb62604ede8a25389c70207c2be898b8522b2
-vendor/etc/data/dsi_config.xml|ea5973ae0bffbdfbffb84fc2348b260d53b03b02
-vendor/etc/data/netmgr_config.xml|94de91a8a5da2b98e3d25fabe45dc8b287a83fee
+vendor/etc/data/dsi_config.xml;FIX_XML|ea5973ae0bffbdfbffb84fc2348b260d53b03b02
+vendor/etc/data/netmgr_config.xml;FIX_XML|94de91a8a5da2b98e3d25fabe45dc8b287a83fee
 vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
 vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
 vendor/etc/init/init-qcril-data.rc|890ac72fa49d0e52a263175a7b5b550539287800
