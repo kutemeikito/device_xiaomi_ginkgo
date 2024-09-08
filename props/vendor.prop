@@ -195,6 +195,12 @@ ro.incremental.enable=1
 # Keystore
 ro.hardware.keystore_desede=true
 
+# Media
+debug.media.codec2=2
+debug.stagefright.c2inputsurface=-1
+media.stagefright.thumbnail.prefer_hw_codecs=true
+ro.media.recorder-max-base-layer-fps=60
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
