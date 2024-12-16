@@ -127,6 +127,7 @@ vendor.camera.not.ctsverify.apk=1
 vendor.camera.vidhance.eis.enabled=1
 vendor.camera.vidhanceEis.force=1
 vendor.vidhance.video.enabled=1
+vendor.camera.remapid=0 1 20 21 22 61
 
 # Crypto
 ro.crypto.allow_encrypt_override=true
