@@ -1,5 +1,8 @@
 # Device proprietary files - from ginkgo MIUI V12.5.2.0.RCOMIXM Global Stable package, unless pinned
 
+# Current blobs with ELF checks disabled:
+# imsdatadaemon, libcne, libwqe, lowi-server depend on libwpa_client, which is a gnu makefile target
+
 # ADSP - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/adsprpcd|5e246a6f5d2dca27e29b233a17e4673532191b95
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|77f5aaf6d773ee545e39bc5fdc99c65434c05379
@@ -1440,12 +1443,12 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml|f76c894f3c6d5b6ed35113a088dc3174c9
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml|14d136e7fcc682311757d3edc0b9d3eaeba11815
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml|c63c37d067e3009735fbc54d4603d43d7d6623e1
 vendor/etc/init/cnd.rc|3a5183df3479500fb729493bc56c71166fc10bce
-vendor/lib64/libcne.so|958786278816b5c8d7a73bb7abfe12d78258edff
+vendor/lib64/libcne.so;DISABLE_CHECKELF|958786278816b5c8d7a73bb7abfe12d78258edff
 vendor/lib64/libcneapiclient.so|b6479678e5b0e8b46d8df5eb8bd610aa17be00d0
 vendor/lib64/libcneoplookup.so|709e92b3399f9e7c73a7c726d71d30d42e8f65f7
 vendor/lib64/libcneqmiutils.so|4f2aff647c4f0138380c407ccac13d6bdc6e51a7
 vendor/lib64/libwms.so|65e2204f8acee188efd1598a3b5a4941aaca9d79
-vendor/lib64/libwqe.so|ae7abf594a2127340f8a90791e00332121f139fd
+vendor/lib64/libwqe.so;DISABLE_CHECKELF|ae7abf594a2127340f8a90791e00332121f139fd
 vendor/lib64/libxml.so|11c11c2fb6b713855532a3709f78935f8c98a766
 vendor/lib64/vendor.qti.data.factory@2.0.so|748bfbaa57a409b8962e2b1725e1415e423a7315
 vendor/lib64/vendor.qti.data.factory@2.1.so|bb1f3fa22563282ee24bf03ca681fdc45551feef
@@ -1566,7 +1569,7 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|9aeecad885a8df84d956
 # GPS - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/garden_app|f811ffda5b09534277a44b849428182055674c84
 vendor/bin/loc_launcher|14f4c45653b09961d4937417ca15778cbb87e041
-vendor/bin/lowi-server|fe483b33c7f45bf9129735c43b9a145b795349d6
+vendor/bin/lowi-server;DISABLE_CHECKELF|fe483b33c7f45bf9129735c43b9a145b795349d6
 vendor/bin/mlid|f70502d4a34efe2674df1b76c698a2de86d09cd8
 vendor/bin/slim_daemon|8726b322f604dc468f01f62af6200666418b8707
 vendor/bin/xtra-daemon|8cb4027bca0868e14fe73c7b2c7af7bb2ddb0562
@@ -2001,7 +2004,7 @@ vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql|1ca05b047116
 # Radio - IMS - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/app/IWlanService/IWlanService.apk|08472592f4a21ad806c487fc0c70c10bbe7c7ac2
 vendor/bin/ims_rtp_daemon|7a37ba220953edf951d4aa4cba761289e7644bf6
-vendor/bin/imsdatadaemon|d84d92b26b0084772a0ff6d5e65abf0c90ce6ef2
+vendor/bin/imsdatadaemon;DISABLE_CHECKELF|d84d92b26b0084772a0ff6d5e65abf0c90ce6ef2
 vendor/bin/imsqmidaemon|1bfd2e728aec5ab957a8bb2e4ac8bf31deb04da6
 vendor/bin/imsrcsd|bf29aac14856f29268c01599e5f6c7c6ae520685
 vendor/etc/init/ims_rtp_daemon.rc|06510e936890f51aeb76f2cf3ed5dbe45e67ac20
