@@ -1,5 +1,5 @@
 # Media
-media.settings.xml=/vendor/etc/media_profiles_V1_0.xml
+media.settings.xml=/vendor/etc/media_profiles.xml
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
 media.stagefright.enable-aac=true
