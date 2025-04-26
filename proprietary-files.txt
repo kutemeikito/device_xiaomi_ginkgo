@@ -1390,7 +1390,6 @@ vendor/bin/cdsprpcd|ea126ed2f1b11622547239f331b8013320c59ad2
 vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
 vendor/lib/libcdsprpc.so|50da6b22e74ee06bd1abfd8ee2649b9fd0266ca7
 vendor/lib/libcdsp_default_listener.so|6a3f97faf26da3d01f7895d37c09c8bc62030e0a
--vendor/lib/libcdsprpc.so
 vendor/lib/libsysmon_cdsp_skel.so|b0dd56ca83493e68dc7610d44045849bb3bd8c38
 vendor/lib64/libcdsprpc.so|e7629a092ba6954c08305a4c8cc08d95313cc2aa
 vendor/lib64/libcdsp_default_listener.so|81e5f4737bfb7e2f0a906183b2a8357a5053ee5c
@@ -1594,7 +1593,6 @@ vendor/bin/xtwifi-client|851bdaceadd0de8b78f9993e614854a9191af2f6
 vendor/bin/xtwifi-inet-agent|73eb9393ba634d805055eea3fbea64785063be4b
 vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
-vendor/lib/hw/vendor.qti.gnss@4.0-impl.so|1ce5c42394b7abdf31980c15c336d376d58b4027
 vendor/lib/libasn1cper.so|e5ab12d54d0f15aeb9c3392ebcd1b8c9839cb157
 vendor/lib/libasn1crt.so|81aec7d86bbb995f7f5915758a1c09e2fdf09656
 vendor/lib/libasn1crtx.so|877811808ef75fef268d0fd36463347625e8b757
@@ -1609,7 +1607,6 @@ vendor/lib/libizat_core.so|d113e67482fe6d9223b13b404823093d0a8406a8
 vendor/lib/liblbs_core.so|4928910fc6d1e048196b1b1862fd676c38596efa
 vendor/lib/libloc_api_v02.so|adc64e0fea39767c917dc9d824391c2239e584e4
 vendor/lib/libloc_socket.so|43e6923a37c97f0c5077238d95734b442ce19e81
-vendor/lib/liblocationservice.so|982e2296d40d23bb683e23de73a4ea35338bf7c7
 vendor/lib/liblocationservice_glue.so|2f82c888fa8adb73ef134a91224844431b8cfc85
 vendor/lib/liblowi_client.so|4b2441c31b8aa20c685759689798925257043e57
 vendor/lib/liblowi_wifihal.so|38664fb7c1c14fac8009582ed549aa4c7cc80bf5
@@ -1629,7 +1626,6 @@ vendor/lib/vendor.qti.gnss@3.0.so|8b82f0de49adec2b8c4d256c7c0c697c14618ca4
 vendor/lib/vendor.qti.gnss@4.0.so|bf1503c002c813463bcc54973be71f0cf922cb56
 vendor/lib/vendor.qti.gnss@4.0-service.so|377126b2798c7187f28e7b8012334da738f887bf
 vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so|b38c7e45c5d7dec91f3bdedd1af3c0fd98564fc1
-vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|298610b462c725c922cf2a24ea5b73591a601cba
 vendor/lib64/libasn1cper.so|4570be025ca1438da074db7a33e2f690a341a590
 vendor/lib64/libasn1crt.so|f1ab203f5c58750433f07362128c5a835fe8a557
 vendor/lib64/libasn1crtx.so|9ec8d2eedff3a5a333be714ccd76b8c3cf593cf0
@@ -1763,6 +1759,7 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.trinket.so
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
+vendor/lib/libqcbor.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
@@ -1800,7 +1797,6 @@ vendor/lib64/libqcodec2.so|ebcb7ae53c292d689b57450120e280c5797cfaa1
 
 # Media - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/lib/libI420colorconvert.so|976e00c9e8966e4c7100099666846770d34f4153
-vendor/lib/libOmxVideoDSMode.so|979e5cb96260c8fa60eb55825a2a22273f524c65
 vendor/lib/libmm-color-convertor.so|22d7b8f77d0f19826743206d79bdf9a6a8c9e18f
 vendor/lib/libmmosal.so|a2203f5be5dc1ee10d2f5da8f167a46acb0a660e
 vendor/lib/vendor.qti.hardware.vpp@1.1.so|d3390ff80287d5b5455391315710e09a9fa916e3
@@ -1894,6 +1890,9 @@ vendor/lib/libsoc_helper_jni.so|33bcdab1220cf460d5e2b10b8793ab21ff14fa94
 vendor/lib64/libsoc_helper.so|1b68d93bc41b403bfcca28828f3b9dfd2b794fef
 vendor/lib64/libsoc_helper_jni.so|593bb46e8bfaacb82a67231c64e82a7fa6d5c608
 
+# QMI - from RKQ1.201004.002 V12.5.2.0.RCOMIXM release-keys
+vendor/lib/libqmi_legacy.so
+
 # QMI (Qualcomm MSM Interface) - from LA.UM.9.11.r1-04500-NICOBAR.0
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
@@ -1935,18 +1934,9 @@ vendor/lib/libqmi_encdec.so|db45b38dda5ce833029c1870c948dcabe36ad721
 vendor/lib/libqmiservices.so|ed6785cccaa6e01be1af7e7a8c8d696eeb78e05f
 
 # Radio - from LA.UM.9.11.r1-04500-NICOBAR.0
-etc/permissions/privapp-permissions-qti.xml|3eda27003bad39514039190d0d7eb675ba034cb9
-etc/sysconfig/qti_whitelist.xml|36d11f2735fcd9ad3ac5639f3c0bb011941b8335
-product/etc/permissions/telephony_product_privapp-permissions-qti.xml|42f4553b61731e56d253766554d4479519cea3ff
--system_ext/app/DeviceInfo/DeviceInfo.apk|4ff56a7e5abfe2faeb95ae8c967ef4cf72589b07
--system_ext/app/DynamicDDSService/DynamicDDSService.apk|502329cf448eb3b7e2736fcad59e4eacc48f93e6
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|a32f88ddcc8f9cba18aa5697ee5bd52201e89b13
--system_ext/app/atfwd/atfwd.apk|1224a0ea61601cf002262aa5f042a68e55e30c3b
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|60af440aae61fcd6939af56a0b94d9b9ef5ebd55
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|4f0056403f56928b8c75a617ba582f17061f89ae
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 system_ext/etc/permissions/telephonyservice.xml|b7831598d3c19c6ce4ef431d1cc44d94c3c35a8d
-system_ext/framework/qcrilhook.jar|f2888f922b8347417dfa86741feb8348795fce6f
 vendor/bin/ATFWD-daemon|0646e296cdc04a5fd755d6a5a8fceb2cd9fa48ad
 vendor/bin/adpl|a7ef739a68cffa6269cf215f0c21de11cd33f8fc
 vendor/bin/hw/qcrild|b593e369985cebb4235066363e77f861eb46662f
@@ -2045,24 +2035,7 @@ system_ext/lib64/libembmssqlite.so|e106b2d4a07ee75a273782191186b19bc25587c7
 system_ext/lib64/libembmstinyxml.so|54af1f8fbcd85534a5c059d6a2f6a7065bc1103a
 
 # Radio - IMS - from LA.UM.9.11.r1-04500-NICOBAR.0
--system_ext/app/imssettings/imssettings.apk|8b47c43d56228dcce93cc8c07c6ceb08cb3d2fe5
-system_ext/lib64/lib-imsvideocodec.so|0d471753164aa8c5b038790a64b8d940820308a9
-system_ext/lib64/lib-imsvt.so|f795cc87119b49587dbb1f3e4349fcf67b0610ed
-system_ext/lib64/lib-imsvtextutils.so|50a092eb7b490f4307bddb3d5a4c595b458bc503
-system_ext/lib64/lib-imsvtutils.so|594714eb04346ca3e864b022251f866f85f0393d
-system_ext/lib64/libimscamera_jni.so|6603d61ed42fa813d54bc86f33eee3dbb273fefa
-system_ext/lib64/libimsmedia_jni.so|180b680b06a4567cf5485d69eac5dd5b4528b50c
-system_ext/lib64/vendor.qti.ims.callcapability@1.0.so|82f59111f25f783e16ecaa0155f917494909f1f2
-system_ext/lib64/vendor.qti.ims.callinfo@1.0.so|485d4c1a17f164bdb9f1f7a127625b46fc015341
-system_ext/lib64/vendor.qti.ims.factory@1.0.so|4b09cbb8e07b67494de68d0f2ed69e82183714b3
-system_ext/lib64/vendor.qti.ims.factory@1.1.so|89139949ee99304b5b897b5432190697ac12c138
-system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so|905ab5d5b9bbfde8b3ca58ea33942b05bb2da90a
-system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so|dedbd21f8e2f30f59504f94bc7bd3c09340cc2ef
-system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so|9a71423516a63df6d92c0f46cd3b576d55ed1746
-system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so|5400fb884ea64b61d0720e0a40b09ce31f47bd33
-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|34da5e45ae4817ccff75c6b8d1d0c125ebd253ed
--system_ext/priv-app/ims/ims.apk|ed68ecd630ddbd49e88bd0b2e3b50ee35c334ef0
--vendor/app/IWlanService/IWlanService.apk|08472592f4a21ad806c487fc0c70c10bbe7c7ac2
+vendor/app/IWlanService/IWlanService.apk|08472592f4a21ad806c487fc0c70c10bbe7c7ac2
 vendor/bin/ims_rtp_daemon|7a37ba220953edf951d4aa4cba761289e7644bf6
 vendor/bin/imsdatadaemon;DISABLE_CHECKELF|d84d92b26b0084772a0ff6d5e65abf0c90ce6ef2
 vendor/bin/imsqmidaemon|1bfd2e728aec5ab957a8bb2e4ac8bf31deb04da6
@@ -2124,8 +2097,6 @@ vendor/bin/sensors.qti|df4b919caa0f56af68a7a28acea339de113d2d71
 vendor/etc/init/init.vendor.sensors.rc|8d286f50fd261dc8843c6a208386b535cc07641e
 vendor/etc/init/vendor.sensors.qti.rc|f34fc966af816b50f10ae7520b33863961a14478
 vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
 vendor/lib/libsensorslog.so|c83784e147b5173534f2d6dfa19a30b2955ba2bf
 vendor/lib/libsnsapi.so|4a6d070a949d9ae405944b58b599a5dd2a77980e
 vendor/lib/libsnsdiaglog.so|c504b2d40bf6e27e16c59f33227d396c20b03fcb
