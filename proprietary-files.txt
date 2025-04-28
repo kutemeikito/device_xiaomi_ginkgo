@@ -1469,6 +1469,7 @@ vendor/etc/qdcm_calib_data_nt36672a_video_mode_dsi_tianma_panel.xml
 vendor/etc/SVIConfig.xml
 
 # DPM - from LA.UM.9.11.r1-04500-NICOBAR.0
+framework/tcmclient.jar|cdd1ea7143a5a7acc3909b5cfa706650179647c7
 vendor/bin/dpmQmiMgr|3c553042d4257161adb75c0979c829b0cb050639
 vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor|d9f1aa7f93b928f42499d613d20ccbc60f279097
