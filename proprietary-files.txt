@@ -1447,13 +1447,13 @@ vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so;MODULE_SUFFIX=_
 vendor/lib64/vendor.qti.hardware.data.connection@1.0.so;MODULE_SUFFIX=_vendor|27c05b225132d27458a4c270a9f8b69fee91009e
 vendor/lib64/vendor.qti.hardware.data.connection@1.1.so;MODULE_SUFFIX=_vendor|2c6b8e0f7da11d2c4177be09255673e04063b936
 vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so;MODULE_SUFFIX=_vendor|208a602e1afcbf56733c278e5683534809ac75c6
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|7c04a0c431fcfb82ea5f27447c8c8723e10b56a7
-vendor/lib64/vendor.qti.hardware.data.lce@1.0.so|d46814e5c8fd76ec2c1b1f98e8d77a2e88bc9f2b
+vendor/lib64/vendor.qti.hardware.data.latency@1.0.so;MODULE_SUFFIX=_vendor|7c04a0c431fcfb82ea5f27447c8c8723e10b56a7
+vendor/lib64/vendor.qti.hardware.data.lce@1.0.so;MODULE_SUFFIX=_vendor|d46814e5c8fd76ec2c1b1f98e8d77a2e88bc9f2b
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so;MODULE_SUFFIX=_vendor|851db5940d5e9e4330e16221be114aef14f52325
 vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so|c041dbfc99643e791e52c4e7f3a87050a8cd6c93
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|000e0d2ac4450c0ad8baca06985bc9065e119f1e
-vendor/lib64/vendor.qti.latency@2.0.so|afcde314af1157cd049192df85dbf5edb603a4b1
-vendor/lib64/vendor.qti.latency@2.1.so|94f65ac08f0ef678dd82c60532c06a456d206707
+vendor/lib64/vendor.qti.latency@2.0.so;MODULE_SUFFIX=_vendor|afcde314af1157cd049192df85dbf5edb603a4b1
+vendor/lib64/vendor.qti.latency@2.1.so;MODULE_SUFFIX=_vendor|94f65ac08f0ef678dd82c60532c06a456d206707
 
 # ConfigStore - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|c96269d845db307474f5db98e6f7e46204752aa0
