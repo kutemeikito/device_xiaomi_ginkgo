@@ -2065,7 +2065,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so;MODULE_SUFFIX=_vendor|b661dc0b948fc
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so;MODULE_SUFFIX=_vendor|b6b0f951b76b490f253608e05b2a9f87e62b8904
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|d5bfb9697d2bf7d4a5bd2505ab8c38c8ba9e781d
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|db909e4fe10379283d09b0983ba60f849f18fece
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so|460e589128fce0b0e83bb3c75aa32f7e1a9494fd
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor|460e589128fce0b0e83bb3c75aa32f7e1a9494fd
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|2ac3b639c06d085b1ce88ede7462be9a52a726f2
 
 # Sensors HAL
