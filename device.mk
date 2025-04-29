@@ -17,6 +17,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Lineage Health
 $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
+# Init
+$(call soong_config_set,libinit,vendor_init_lib,libinit_ginkgo)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay

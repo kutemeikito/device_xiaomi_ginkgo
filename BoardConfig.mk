@@ -105,7 +105,6 @@ ODM_MANIFEST_SKUS += willow
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_ginkgo
 TARGET_RECOVERY_DEVICE_MODULES := libinit_ginkgo
 
 # Kernel
