@@ -2215,7 +2215,7 @@ system_ext/etc/spn-conf.xml|ac8a0750445f66091e7e77928fc055ff50369f42
 system_ext/framework/com.qti.dpmframework.jar|06871af3c26d8357a250276948112d8eae105e01
 system_ext/framework/dpmapi.jar|556f859768e370414eb91b0e5aaab619d655e2d8
 system_ext/framework/qcrilhook.jar|8d44048c04f4d38a6bf6a279e3bceface10c0dde
-system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|62e5bfe5c7525844a828e89360fde9694a7cdf96
+system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so;SYMLINK=vendor|62e5bfe5c7525844a828e89360fde9694a7cdf96
 system_ext/lib64/libdiag_system.so|d62bd5005f06f2394acd1ff3b45424ac331efcfb
 system_ext/lib64/libdpmctmgr.so|9d13e5ae9882f5b7e6ac31a9d073a66a27d1c465
 system_ext/lib64/libdpmfdmgr.so|b705b098462e1198fc24175732d687142cc26562
