@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_ginkgo.mk
+    $(LOCAL_DIR)/ryz_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_ginkgo-ap3a-user \
-    aosp_ginkgo-ap3a-userdebug \
-    aosp_ginkgo-ap3a-eng
+    ryz_ginkgo-ap3a-user \
+    ryz_ginkgo-ap3a-userdebug \
+    ryz_ginkgo-ap3a-eng

@@ -25,17 +25,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit pixel-priv keys
-$(call inherit-product, vendor/pixel-priv/keys/keys.mk)
-
-# Inherit some common PixelOS stuff
-TARGET_BOOT_ANIMATION_RES := 1080
-PRODUCT_NO_CAMERA := false
+# Inherit some common RyzOS stuff
+RYZ_MAINTAINER := Ryuzenn
+WITH_GMS := true
+WITH_GMS_VARIANT := core
 
 # Device identifier
-PRODUCT_NAME := aosp_ginkgo
+PRODUCT_NAME := ryz_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
